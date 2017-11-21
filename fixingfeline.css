@@ -1,0 +1,467 @@
+body {
+	background:url("images/earth_tone.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+.home{
+}
+.about{
+}
+.form{
+
+}
+.contact{
+	text-align:center;
+}
+.navbar-brand{
+	color: yellow;
+	font-size:20px;
+}
+
+#form{
+	background:#33ccff;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+/*settings for all paragraphs*/
+p{
+	font-size: 80px;
+	width: 78%;
+	margin:auto;
+	float:right;
+}
+/*paragraph below notes box*/
+.help-block{
+	font-size:20px;
+	color: white;
+}
+
+/* Home Page Image */
+img{ 
+	border-radius:20px;
+	top:0;
+	animation: fadein 4s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#comfy{
+	border-radius:60px;
+	padding: 50px;
+}
+
+/*Quote on home page */
+#quote{
+	color: #000000;
+	text-shadow: 2px 2px white;
+	top:200px;
+	margin:auto;
+	width: 20em; 
+	font-size:25px;
+	font-family: 'Marck Script', cursive;
+	animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*paragraphs on the form page*/
+.paraform {
+	font-size: 20px;
+	float:left;
+}
+
+
+/*settings for title on each page*/
+h1 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 5em;
+	color: #000000;
+}
+/*settings for main headings*/
+h2{
+	color:white;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 4px;
+	text-align: center;
+}
+/*Heading for appointment calendar*/
+h3{
+	text-align:center;
+	color:purple;
+}
+/*Input box for date selection*/
+#datepicker{
+	position:relative;
+	color:purple;
+	right: 0;
+	left:200px;
+	margin:10px;
+}
+/*Submit button for your appointment*/
+.submit{
+	position:relative;
+	right:0;
+	left:210px;
+	height:60px;
+	width:160px;
+	border-radius: 10px;
+	background: #99ff99;
+	color:#000000;
+}
+/*Color of word on button*/
+button a{
+	color:#000000;
+}
+/*Makes the conformation image circular*/
+.thank_you{
+	 border-radius: 50%;
+}
+/*paragraph on top of the about page*/
+h4{
+	text-align: center;
+	font-weight: 700;
+	font-size: 25px;
+	color: black;
+}
+/*Table headings for cat services and their description*/
+th{
+	color:purple;
+	font-size: 25px;
+	text-align:center;
+}
+td{
+	text-align:center;
+}
+/*cat services and their description table*/
+table{
+	font-size: 20px;
+} 
+/*settings for the contact page paragraphs*/
+
+.social{
+	text-align:center;
+	list-style:none;
+	font-size:40px;
+}
+
+#cpname{
+	height: 100px;
+	position: left-side;
+}
+/*Paragraph's for staff info*/
+.board{
+	color: #00ccff;
+	text-shadow: 2px 2px black;
+}
+/*Staff's name position*/
+ .name{
+	text-align:center;
+}
+
+.mission{
+	font-size: 15px;
+}
+/*class for about us stock photo images*/
+.stock {
+		display: inline;
+		height: 150px;
+		
+	}
+/*
+#bod{
+	color:#000000;
+}
+#content {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+#content{
+	color: #000000;
+	text-shadow: 2px 2px #FFFFFF;
+}
+*/
+/*Lines seperating paragraph and table on cat services page*/
+<style>
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+
+hr {
+	width: 80%;
+	float:left;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+/*Button styles for the possible signup page*/
+button.cancelbtn{
+	color: red;
+}
+/*Button styles for the possible signup page*/
+button.signupbtn{
+	color: red;
+}
+
+/*calendar*/
+#cal {
+   display: none;
+   position: absolute;
+   left: 230px;
+   top: 65px;
+   background: black;
+   color: white;
+   padding: 10px;
+   -moz-border-radius-topleft: 10px;
+   -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+   -moz-border-radius-topright: 10px;
+   -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+   clear: both;
+}
+
+#cal table caption {
+   font-weight: bold;
+   font-size: 14pt;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background: rgb(46,49,146);
+}
+
+#cal table th {
+   text-align: right;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+   color: rgb(178,184,183);
+   text-align: right;
+   cursor: pointer;
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: white;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: yellow;
+   color: black;
+}
+
+#close {
+   color: white;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+/*Input section for date*/
+fieldset.text input {
+   margin-top: 5px;
+   margin-right: 5px;
+}
+/*Flip Photos*/
+.f1_container {
+  position: absolute;
+  margin: 10px auto;
+  width: 100%;
+  height: 210px;
+  z-index: 1;
+}
+.f1_container {
+  perspective: 1000;
+}
+.f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f1_container:hover .f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+.flip{
+	font-size:15.3px;
+	text-align:center;
+}
+/*Ms.L*/
+.f2_container {
+  position: absolute;
+  margin: 10px auto;
+  width: 100%;
+  height: 210px;
+  z-index: 1;
+}
+.f2_container {
+  perspective: 1000;
+}
+.f2_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f2_container:hover .f2_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+.flip{
+	font-size:15.3px;
+	text-align:center;
+}
+/*Mr.C*/
+.f3_container {
+  position: absolute;
+  margin: 10px auto;
+  width: 100%;
+  height: 210px;
+  z-index: 1;
+}
+.f3_container {
+  perspective: 1000;
+}
+.f3_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.f3_container:hover .f3_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+.flip{
+	font-size:15.3px;
+	text-align:center;
+}
