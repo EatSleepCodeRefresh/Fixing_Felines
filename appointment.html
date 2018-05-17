@@ -10,12 +10,6 @@
    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  
-  <script>
-  $(document).ready(function() {
-    $("#datepicker").datepicker();
-  });
-  </script>
 </head>
 <body class="appt">
 <nav class="navbar navbar-default">
@@ -35,214 +29,108 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
        <li><a href="home.html">Home</a></li>
-	    <li><a href="about.html">About</a></li>
-		<li><a href="form.html">Cat Services</a></li>
+	    <li><a href="meetOurTeam.html">Meet Our Team</a></li>
+		<li><a href="catServices.html">Cat Services</a></li>
 		<li class="active"><a href="appointment.html">Appointments</a></li>
 		 <li><a href="contact.html">Contact</a></li>
+		  <li><a href="donate.html">Donate</a></li>
+		  <li><a href="FFPhotos.html">Photos</a></li>
+		   <li><a href="thankYou.html">Thank Yous</a></li>
       </ul>
-  
-	  
     </div>
   </div>
 </nav>
 
     <div class="container">
         <h3>Make a spay/neuter appointment</h3>
-        <hr />
-        <div ng-app="onlineApp" ng-controller="onlineAppCreateCtrl">
-            <form name="formAppointment" novalidate class="form-horizontal">
-                <div class="row">
-                    <div class="col-md-6">
-					
-				
-<fieldset>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">First Name *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" required ng-model="model.FirstName" maxlength="255" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Last Name *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" required ng-model="model.LastName" maxlength="255" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Cell Phone<span ng-show="!validatePhones() || !model.HomePhone"> *</span></label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.CellPhone" ui-mask="999-999-9999" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Home Phone<span ng-show="!validatePhones() || !model.CellPhone"> *</span></label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.HomePhone" ui-mask="999-999-9999" />
-            <p class="bg-info help-block" ng-show="!validatePhones()">
-            </p>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Email *</label>
-        <div class="col-sm-8">
-            <input type="email" class="form-control input-sm" ng-required="!skipEmailConfirmation" ng-model="model.Email" maxlength="255" />
-            <p class="bg-info help-block" ng-show="!model.Email">
-                Email is required for a confirmation to be sent
-            </p>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" ng-model="skipEmailConfirmation" />
-                    Skip Email Confirmation
-                </label>
-            </div>
-        </div>
-    </div>
- 
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Address Line 1 *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.Line1" required ng-disabled="disableCustomAddress" placeholder="Address (PO boxes not allowed)..." maxlength="500" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Address Line 2</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.Line2" placeholder="Apartment, PO Box, C/O, Unit, Building, Floor, etc..." maxlength="500" />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Zip *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.Zip" required ng-disabled="disableCustomAddress" placeholder="Enter Zip..."  maxlength="500"/>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">City *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.City" required ng-disabled="disableCustomAddress" placeholder="Enter City..."  maxlength="500"/>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">State *</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.State" maxlength="2" required ng-disabled="disableCustomAddress" placeholder="Enter State (two letters only)..." />
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="col-sm-4 control-label">County</label>
-        <div class="col-sm-8">
-            <input type="text" class="form-control input-sm" ng-model="model.County" ng-disabled="disableCustomAddress" placeholder="Enter County..." maxlength="500" />
-        </div>
-    </div>
+		<br>
+		<br>
+		<br>
+        
+<form width="100%" style="text-align:center" class="contact-form" action="appointment.php" method="post">
+	<p style="color:black">Name</p><input style="color:black" type="text" name="name" placeholder="Full Name">
+	<p style="color:black">Phone(optional)</p><input style="color:black" type="text" name="phone" placeholder="555-555-5555">
+	<p style="color:black">Email</p><input style="color:black" type="text" name="email" placeholder="Your e-mail">
+	<p style="color:black">Companion Type</p>
+	<select name="dropdown1" size="1" style="color:black">
+		 <option value="companion">-- choose type --</option>
+		 <option value="companion">Household companion</option>
+		 <option value="companion">Feral/stray</option>
+	</select>
+	<p style="color:black">Animals Age</p>
+	<select name="dropdown2" size="1" style="color:black">
+		<option value="age">-- choose year --</option>
+		<option value="age">1yrs old</option>
+		<option value="age">2yrs old</option>
+		<option value="age">3yrs old</option>
+		<option value="age">4yrs old</option>
+		<option value="age">5yrs old</option>
+		<option value="age">6yrs old</option>
+		<option value="age">7yrs old</option>
+		<option value="age">8yrs old</option>
+		<option value="age">9yrs old</option>
+		<option value="age">10yrs old</option>
+		<option value="age">11yrs old</option>
+		<option value="age">12yrs old</option>
+		<option value="age">13yrs old</option>
+		<option value="age">14yrs old</option>
+		<option value="age">15yrs old</option>
+		<option value="age">16yrs old</option>
+		<option value="age">17yrs old</option>
+		<option value="age">18yrs old</option>
+		<option value="age">19yrs old</option>
+		<option value="age">20yrs old</option>
+		<option value="age">Unknown</option>
+	</select>
+	<p style="color:black">Animals Gender</p>
+	<select name="dropdown3" size="1" style="color:black">
+		<option value="">-- choose sex --</option>
+		<option value="">Male</option>
+		<option value="">Female</option>
+    </select>
+	<p style="color:black">Animals Weight</p>
+	<select name="dropdown4" size="1" style="color:black">
+		<option value="">-- choose weight --</option>
+		<option value="">1lbs</option>
+		<option value="">2lbs</option>
+		<option value="">3lbs</option>
+		<option value="">4lbs</option>
+		<option value="">5lbs</option>
+		<option value="">6lbs</option>
+		<option value="">7lbs</option>
+		<option value="">8lbs</option>
+		<option value="">9lbs</option>
+		<option value="">10lbs</option>
+		<option value="">11lbs</option>
+		<option value="">12lbs</option>
+		<option value="">13lbs</option>
+		<option value="">14lbs</option>
+		<option value="">15lbs</option>
+		<option value="">16lbs</option>
+		<option value="">17lbs</option>
+		<option value="">18lbs</option>
+		<option value="">19lbs</option>
+		<option value="">20lbs</option>
+		<option value="">Other</option>
+		<option value="">Unknown</option>
+	</select>
+	<br>
+	<br>
+	<p style="color:black">Tell us about any special requirments your pet has and or needs</p><textarea style="color:black" name="message" rows="6" cols="25"></textarea>
+	<br>
+	<input style="color:black" type="submit" name="submit" value="Book Appointment">
+</form>
+	
+</div>
 
-    <div class="form-group">
-        <label class="col-sm-4 control-label">Notes</label>
-        <div class="col-sm-8">
-            <textarea rows="5" class="form-control input-sm" ng-model="model.Notes" maxlength="1000"></textarea>
-            <p class="help-block">
-                Please let us know if there is anything special we should know about this animal, or if you would like other services for this appointment.<br />
-                (maximum 1000 characters allowed)
-            </p>
-        </div>
-    </div>
-</fieldset>
-
-    </div>
-     <div class="col-md-6">
-<fieldset>
-    <div ng-repeat="animal in model.animals" ng-controller="animalCtrl">
-        <div ng-form="animalForm">
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Animal Name</label>
-                <div class="col-sm-8">
-                    <input type="text" class="form-control input-sm" required ng-model="animal.Name" maxlength="500" />
-                </div>
-            </div>
-		 
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Sex</label>
-                <div class="col-sm-8">
-                    <select class="form-control input-sm" ng-model="animal.GenderId" required
-                            ng-options="c.id as c.name for c in $parent.genders">
-                        <option value="">-- choose sex --</option>
-						<option value="">Male</option>
-						<option value="">Female</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Appx. Weight</label>
-                <div class="col-sm-8">
-                    <select class="form-control input-sm" ui-select2 ng-model="animal.Weight" data-placeholder=">-- choose weight --" required>
-                        <option value="">-- choose weight --</option>
-                        <option ng-repeat="b in weigths" value="{{b}}">2lbs</option>
-						<option ng-repeat="b in weigths" value="{{b}}">4lbs</option>
-						<option ng-repeat="b in weigths" value="{{b}}">6lbs</option>
-						<option ng-repeat="b in weigths" value="{{b}}">8lbs</option>
-						<option ng-repeat="b in weigths" value="{{b}}">10lbs</option>
-						<option ng-repeat="b in weigths" value="{{b}}">Unknown</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Age Years</label>
-                <div class="col-sm-8">
-                    <select class="form-control input-sm" ng-model="animal.AgeYear" required
-                            ng-options="c for c in $parent.years">
-                        <option value="">-- choose year --</option>
-						<option value="">1yrs old</option>
-						<option value="">2yrs old</option>
-						<option value="">3yrs old</option>
-						<option value="">4yrs old</option>
-						<option value="">5yrs old</option>
-						<option value="">Unknown</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label">Age Months</label>
-                <div class="col-sm-8">
-                    <select class="form-control input-sm" ng-model="animal.AgeMonth" required
-                            ng-options="c for c in $parent.months">
-                        <option value="">-- choose month --</option>
-						<option value="">1 Month</option>
-						<option value="">2 Months</option>
-						<option value="">3 Months</option>
-						<option value="">4 Months</option>
-						<option value="">5 Months </option>
-						<option value="">6 Months</option>
-						<option value="">7 Months</option>
-						<option value="">8 Months</option>
-						<option value="">9 Months</option>
-						<option value="">10 Months</option>
-						<option value="">11 Months</option>
-						<option value="">12 Months</option>
-						<option value="">Unknown</option>
-                    </select>
-                </div>
-            </div>
-</fieldset>
-<button class="submit"><a href="#">Setup my appointment</a></button>
-    </div>
-          </div>
-				</form>
-		
-<p>Once we recieve your email we will call you to confirm available appointment dates, and find a date/time that works best with your schedule. Thank you.</p>
-
-
-   </div>
-        <hr />
-        <p>
-            <small>Powered by <a href="#" target="#">Clinic HQ</a> &copy; 2017</small>
-        </p>
-    </div>	
-<footer>
-		
-
-</footer>
-<script src="appointment.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 	
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+<br>
+<br>
+<hr>
+<footer style="color:black">
+copyright. 2017
+</footer>
 </html>
